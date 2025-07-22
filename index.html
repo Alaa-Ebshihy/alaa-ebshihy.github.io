@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alaa El-Ebshihy - Personal Website</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; }
+        header { background-color: #1e3a8a; color: white; text-align: center; padding: 20px; display: flex; align-items: center; justify-content: center; gap: 20px; }
+        /*header img { border-radius: 50%; width: 100px; height: 100px; }*/
+        header img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; object-position: center; }
+
+        header h1 { margin: 0; font-size: 2rem; }
         nav { background: #333; color: #fff; padding: 1rem; text-align: center; }
         nav a { color: white; margin: 0 10px; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        .container { max-width: 800px; margin: auto; padding: 20px; }
-        h1, h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        nav a:hover { color: #1e3a8a; }
+        .container { max-width: 800px; margin: auto; padding: 20px; background-color: white; }
+        h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; color: #000000; }
         section { margin-bottom: 40px; }
     </style>
 </head>
@@ -27,15 +32,35 @@
         <a href="#contact">Contact</a>
     </nav>
 
+
+    <header>
+        <img src="profile.png" alt="Alaa El-Ebshihy Photo">
+        <h1>Alaa El-Ebshihy</h1>
+    </header>
+
+
+
     <div class="container">
         <section id="home">
-            <h1>Welcome</h1>
-            <p>I'm Alaa El-Ebshihy, a Data Science Researcher and PhD student at TU Wien.</p>
+            <p> My name is Alaa El-Ebshihy, and I am currently a researcher at Research Studios Austria (Data Science Studio) and a PhD candidate in Computer Science at TU Wien. With a research background in Information Retrieval (IR) and Natural Language Processing (NLP), focusing mainly on analyzing textual change over time, a topic that has been central to both my master’s and PhD theses.</p>
+            <p> Currently, I'm in my last stages of my PhD is under the supervision of Prof. Andreas Rauber and Dr. Florina Piroi. My research focuses on identifying and representing knowledge deltas in scientific literature, which looks at methods to extract information from literature to represent differences between research articles. </p>
+            <p>In addition to my research, I have been actively involved in the organization of the LongEval Lab. My role spans multiple stages including proposal writing, dataset preparation, collecting submissions, evaluating the participating systems, and organizing the corresponding workshop sessions during the CLEF conference.</p>
+            <p>I also contribute to the academic community through reviewing activities for several  conferences such as SIGIR, ICTIR, ECIR, and CLEF</p>
+            <p>Beyond research, I have accumulated industry experience through roles in software development across various companies including Amazon Web Services, Softxpert, Webalo Inc, and Novomind Egypt LLC.</p>
         </section>
+    </div>
 
-        <section id="research">
+    <div class="container">
+<!--         <section id="research">
             <h2>Research</h2>
-            <p>Details about my research interests and projects.</p>
+    <p>My research interests lie at the intersection of Information Retrieval (IR), Natural Language Processing (NLP), and Data Science. A central theme in my work is understanding and modeling the evolution of knowledge in scientific literature over time. This is captured through the concept of "Knowledge Delta," which involves detecting, representing, and quantifying the changes between scientific articles across evolving research fields.</p>
+
+    <p>During my PhD, under the supervision of Prof. Andreas Rauber and Dr. Florina Piroi, I have developed methodologies to identify knowledge deltas by analyzing citation contexts, textual similarities, and argumentative structures within scholarly publications. This contributes to improving information retrieval systems' adaptability to changing corpora and scientific progress.</p>
+
+    <p>Beyond my PhD, I have contributed to projects related to scientific summarization, narrative extraction, and performance prediction of retrieval systems in evolving evaluation environments. Notable among these is the Kodicare project, where I explored quantifying differences between test collections to better evaluate IR systems.</p>
+
+    <p>Additionally, I have worked on linguistic shift detection using Google Books Ngram, addressing historical changes in language usage, and on sentiment analysis of Arabic tweets using hybrid machine learning and lexicon-based approaches.</p>
+
         </section>
 
         <section id="teaching">
@@ -56,12 +81,55 @@
         <section id="skills">
             <h2>Skills</h2>
             <p>Programming languages, tools, and natural languages proficiency.</p>
-        </section>
+        </section> -->
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>List of academic publications with links and details.</p>
-        </section>
+        <h2>Publications</h2>
+
+        <h3>2025</h3>
+        <ul>
+            <li>El-Ebshihy, A., Ningtyas, A. M., Piroi, F., Rauber, A. Benchmark Creation for Narrative Knowledge Delta Extraction Tasks: Can LLMs Help? <i>Proceedings of ECIR 2025</i>.</li>
+        </ul>
+
+        <h3>2024</h3>
+        <ul>
+            <li>Ningtyas, A. M., El-Ebshihy, A., Piroi, F., Hanbury, A. Improving laypeople familiarity with medical terms by informal medical entity linking. <i>Proceedings of CLEF 2024</i>.</li>
+            <li>Staudinge, M., El-Ebshihy, A., Ningtyas, A. M., Piroi, F., Hanbury, A. AMATU@SimpleText2024: are LLMs any good for scientific leaderboard extraction. <i>CLEF 2024 Working Notes</i>.</li>
+        </ul>
+
+        <h3>2023</h3>
+        <ul>
+            <li>El-Ebshihy, A. et al. Using Semi-automatic Annotation Platform to Create Corpus for Argumentative Zoning. <i>TPDL 2023</i>.</li>
+            <li>El-Ebshihy, A. et al. Predicting Retrieval Performance Changes in Evolving Evaluation Environments. <i>CLEF 2023</i>.</li>
+            <li>El-Ebshihy, A. Identifying and Representing Knowledge Delta in Scientific Literature. <i>ECIR 2023</i>.</li>
+        </ul>
+
+        <h3>2022</h3>
+        <ul>
+            <li>El-Ebshihy, A. et al. A platform for argumentative zoning annotation and scientific summarization. <i>CIKM 2022</i>.</li>
+            <li>Mendoza, O. E. et al. Benchmark for Research Theme Classification of Scholarly Documents. <i>SDP Workshop, COLING 2022</i>.</li>
+        </ul>
+
+        <h3>2021</h3>
+        <ul>
+            <li>El-Ebshihy, A. Semi-automatic Labelling of Scientific Articles using Deep Learning to Enlarge Benchmark Data for Scientific Summarization. <i>SIGIR 2021</i>.</li>
+        </ul>
+
+        <h3>2020</h3>
+        <ul>
+            <li>El-Ebshihy, A. et al. ARTU / TU Wien and Artificial Researcher@ LongSumm 20. <i>SDP Workshop, EMNLP 2020</i>.</li>
+        </ul>
+
+        <h3>2018</h3>
+        <ul>
+            <li>El-Ebshihy, A., El-Makky, N., Nagi, K. Using Google Books Ngram in Detecting Linguistic Shifts over Time. <i>KDIR 2018</i>.</li>
+        </ul>
+
+        <h3>2014</h3>
+        <ul>
+            <li>El-Makky, N., Nagi, K., El-Ebshihy, A. et al. Sentiment Analysis of Colloquial Arabic Tweets. <i>ASE BigData/SocialInformatics/PASSAT/BioMedCom 2014</i>.</li>
+        </ul>
+    </section>
+
 
         <section id="news">
             <h2>News</h2>
