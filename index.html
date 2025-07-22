@@ -6,27 +6,29 @@
     <title>Alaa El-Ebshihy - Personal Website</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; }
-        header { background-color: #1e3a8a; color: white; text-align: center; padding: 20px; display: flex; align-items: center; justify-content: center; gap: 20px; }
-        /*header img { border-radius: 50%; width: 100px; height: 100px; }*/
-        header img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; object-position: center; }
-
+        header { background-color: #456882; color: white; text-align: center; padding: 20px; display: flex; align-items: center; justify-content: center; gap: 20px; }
+        header img { border-radius: 50%; width: 100px; height: 100px; object-fit: cover; object-position: center; }
         header h1 { margin: 0; font-size: 2rem; }
         nav { background: #333; color: #fff; padding: 1rem; text-align: center; }
         nav a { color: white; margin: 0 10px; text-decoration: none; }
-        nav a:hover { color: #1e3a8a; }
+        nav a:hover { color: #1B3C53; }
         .container { max-width: 800px; margin: auto; padding: 20px; background-color: white; }
         h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; color: #000000; }
         section { margin-bottom: 40px; }
+        .pub-year { font-size: 1.2em; margin-top: 20px; color: #1B3C53; }
+        .publication { margin-bottom: 10px; }
+        .publication .title { font-weight: bold; }
+        .publication .venue { font-style: italic; color: gray; }
     </style>
 </head>
 <body>
     <nav>
         <a href="#home">Home</a>
-        <a href="#research">Research</a>
+<!--         <a href="#research">Research</a>
         <a href="#teaching">Teaching</a>
         <a href="#industry">Industry</a>
         <a href="#activities">Activities</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills">Skills</a -->
         <a href="#publications">Publications</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
@@ -82,52 +84,89 @@
             <h2>Skills</h2>
             <p>Programming languages, tools, and natural languages proficiency.</p>
         </section> -->
-
+    <section id="publications">
         <h2>Publications</h2>
 
-        <h3>2025</h3>
-        <ul>
-            <li>El-Ebshihy, A., Ningtyas, A. M., Piroi, F., Rauber, A. Benchmark Creation for Narrative Knowledge Delta Extraction Tasks: Can LLMs Help? <i>Proceedings of ECIR 2025</i>.</li>
-        </ul>
+        <div class="pub-year">2025</div>
+        <div class="publication">
+            <span class="title">Benchmark Creation for Narrative Knowledge Delta Extraction Tasks: Can LLMs Help?</span><br>
+            <u>Alaa El-Ebshihy</u>, Annisa Maulida Ningtyas, Florina Piroi, Andreas Rauber<br>
+            <span class="venue">ECIR 2025</span>
+        </div>
 
-        <h3>2024</h3>
-        <ul>
-            <li>Ningtyas, A. M., El-Ebshihy, A., Piroi, F., Hanbury, A. Improving laypeople familiarity with medical terms by informal medical entity linking. <i>Proceedings of CLEF 2024</i>.</li>
-            <li>Staudinge, M., El-Ebshihy, A., Ningtyas, A. M., Piroi, F., Hanbury, A. AMATU@SimpleText2024: are LLMs any good for scientific leaderboard extraction. <i>CLEF 2024 Working Notes</i>.</li>
-        </ul>
 
-        <h3>2023</h3>
-        <ul>
-            <li>El-Ebshihy, A. et al. Using Semi-automatic Annotation Platform to Create Corpus for Argumentative Zoning. <i>TPDL 2023</i>.</li>
-            <li>El-Ebshihy, A. et al. Predicting Retrieval Performance Changes in Evolving Evaluation Environments. <i>CLEF 2023</i>.</li>
-            <li>El-Ebshihy, A. Identifying and Representing Knowledge Delta in Scientific Literature. <i>ECIR 2023</i>.</li>
-        </ul>
+        <div class="pub-year">2024</div>
+        <div class="publication">
+            <span class="title">Improving laypeople familiarity with medical terms by informal medical entity linking</span><br>
+            Annisa Maulida Ningtyas, <u>Alaa El-Ebshihy</u>, Florina Piroi, Allan Hanbury<br>
+            <span class="venue">CLEF 2024</span>
+        </div>
+        <div class="publication">
+            <span class="title">AMATU@ SimpleText2024: are LLMs any good for scientific leaderboard extraction</span><br>
+            Moritz Staudinge, <u>Alaa El-Ebshihy</u>, Annisa Maulida Ningtyas, Florina Piroi, Allan Hanbury<br>
+            <span class="venue">CLEF 2024 Working Notes</span>
+        </div>
 
-        <h3>2022</h3>
-        <ul>
-            <li>El-Ebshihy, A. et al. A platform for argumentative zoning annotation and scientific summarization. <i>CIKM 2022</i>.</li>
-            <li>Mendoza, O. E. et al. Benchmark for Research Theme Classification of Scholarly Documents. <i>SDP Workshop, COLING 2022</i>.</li>
-        </ul>
 
-        <h3>2021</h3>
-        <ul>
-            <li>El-Ebshihy, A. Semi-automatic Labelling of Scientific Articles using Deep Learning to Enlarge Benchmark Data for Scientific Summarization. <i>SIGIR 2021</i>.</li>
-        </ul>
+        <div class="pub-year">2023</div>
+        <div class="publication">
+            <span class="title">Using Semi-automatic Annotation Platform to Create Corpus for Argumentative Zoning</span><br>
+            <u>Alaa El-Ebshihy</u>, Annisa Maulida Ningtyas, Florina Piroi, Andreas Rauber, Ade Romadhony, Said Al Faraby, Mira Kania Sabariah <br>
+            <span class="venue">TPDL 2023</span>
+        </div>
 
-        <h3>2020</h3>
-        <ul>
-            <li>El-Ebshihy, A. et al. ARTU / TU Wien and Artificial Researcher@ LongSumm 20. <i>SDP Workshop, EMNLP 2020</i>.</li>
-        </ul>
+        <div class="publication">
+            <span class="title">Predicting Retrieval Performance Changes in Evolving Evaluation Environments</span><br>
+            <u>Alaa El-Ebshihy</u>, Tobias Fink, Gabriela Gonzalez-Saez, Petra Galuščáková, Florina Piroi, David Iommi, Lorraine Goeuriot, Philippe Mulhem  <br>
+            <span class="venue">CLEF 2023</span>
+        </div>
+        <div class="publication">
+            <span class="title">Identifying and Representing Knowledge Delta in Scientific Literature</span><br>
+            <u>Alaa El-Ebshihy</u> <br>
+            <span class="venue">ECIR 2023</span>
+        </div>
 
-        <h3>2018</h3>
-        <ul>
-            <li>El-Ebshihy, A., El-Makky, N., Nagi, K. Using Google Books Ngram in Detecting Linguistic Shifts over Time. <i>KDIR 2018</i>.</li>
-        </ul>
+        <div class="pub-year">2022</div>
+        <div class="publication">
+            <span class="title">A platform for argumentative zoning annotation and scientific summarization</span><br>
+            <u>Alaa El-Ebshihy</u>, Annisa Maulida Ningtyas, Linda Andersson, Florina Piroi and Andreas Rauber<br>
+            <span class="venue">CIKM 2022</span>
+        </div>
 
-        <h3>2014</h3>
-        <ul>
-            <li>El-Makky, N., Nagi, K., El-Ebshihy, A. et al. Sentiment Analysis of Colloquial Arabic Tweets. <i>ASE BigData/SocialInformatics/PASSAT/BioMedCom 2014</i>.</li>
-        </ul>
+        <div class="publication">
+            <span class="title">Benchmark for Research Theme Classification of Scholarly Documents</span><br>
+             Óscar E. Mendoza, Wojciech Kusa, <u>Alaa El-Ebshihy</u>, Ronin Wu, David Pride, Petr Knoth, Drahomira Herrmannova, Florina Piroi, Gabriella Pasi, Allan Hanbury <br>
+            <span class="venue">SDP Workshop, COLING 2022</span>
+        </div>
+
+        <div class="pub-year">2021</div>
+        <div class="publication">
+            <span class="title">Semi-automatic Labelling of Scientific Articles using Deep Learning to Enlarge Benchmark Data for Scientific Summarization. </span><br>
+            <u>Alaa El-Ebshihy</u><br>
+            <span class="venue">SIGIR 2021</span>
+        </div>
+
+        <div class="pub-year">2020</div>
+        <div class="publication">
+            <span class="title">ARTU / TU Wien and Artificial Researcher@ LongSumm 20 </span><br>
+            <u>Alaa El-Ebshihy</u>, Annisa Maulida Ningtyas, Linda Andersson, Florina Piroi and Andreas Rauber<br>
+            <span class="venue">SDP Workshop, EMNLP 2020</span>
+        </div>
+
+        <div class="pub-year">2018</div>
+        <div class="publication">
+            <span class="title">Using Google Books Ngram in Detecting Linguistic Shifts over Time </span><br>
+            <u>Alaa El-Ebshihy</u>, Annisa Maulida Ningtyas, Linda Andersson, Florina Piroi and Andreas Rauber<br>
+            <span class="venue">KDIR 2018</span>
+        </div>
+
+        <div class="pub-year">2014</div>
+        <div class="publication">
+            <span class="title">Sentiment Analysis of Colloquial Arabic Tweets</span><br>
+            Nagwa El-Makky, Khaled Nagi, <u>Alaa El-Ebshihy</u>, Esraa Apady, Omneya Hafez, Samar Mostafa, and Shimaa Ibrahim <br>
+            <span class="venue">ASE BigData/SocialInformatics/PASSAT/BioMedCom 2014</span>
+        </div>
+
     </section>
 
 
